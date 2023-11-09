@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1699531878 source:d:\nuu\3gd\作業系統\hw\cpu\main.cpp
+	<iostream>
+	<stack>
+	<queue>
+
+1699533563 source:d:\nuu\3gd\作業系統\hw\cput\main.cpp
+	<iostream>
+	<queue>
+	<vector>
+
