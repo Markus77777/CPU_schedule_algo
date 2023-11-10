@@ -235,9 +235,12 @@ void gantt(vector<string> gant,string nam[5],int arv[5],int ttime){ //gantt函�
             }
         }
     }
+    double ttwtime=0; //用於計算平均等待時間
     for(int j=0;j<5;++j){                                          //輸出每個CPU的等待時間
         cout<<nam[j]<<"="<<wtime[j]-(ttime-rtime[j])-arv[j]<<"  "; //第j個CPU等待時間 = (wtime總等待時間) - [(ttime-rtime)總時間減去回復時間] - (arv到達時間)
+        ttwtime+=wtime[j]-(ttime-rtime[j])-arv[j];
         }
+    cout<<endl<<"平均等待時間: "<<ttwtime/5;
     cout<<endl<<"-----------------------------------------------------------------------------------------------------"<<endl<<endl<<endl;
      gant.clear(); //清空gant的vector陣列
 
